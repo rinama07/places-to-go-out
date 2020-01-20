@@ -23,9 +23,7 @@ async function index(req, res) {
         }
     });
 
-    res.json({
-        places
-    });
+    res.json(places);
 }
 
 module.exports = {
