@@ -7,6 +7,7 @@ function getPlaceByProps(name, address, site_url, instagram_user, tags, rank, vi
     const location = getLocationByAddress(address);
 
     tags = getStringAsArray(tags);
+    rank = rank.toFixed(1);
     visit_date = getDateObjWithouTime(visit_date);
 
     return {
